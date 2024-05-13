@@ -1,0 +1,87 @@
+
+[   
+    {
+       "id": 1,
+       "nombre": "Simple Pepinillo",
+       "precio": 4000,
+       "img": "./Hamburguesa-fondo-negro.jpg"
+    },
+
+    {
+        "id": 2,
+        "nombre": "Simple Cheddar",
+        "precio": 4200,
+        "img": "./Hamburguesa-fondo-negro.jpg"
+     },
+
+     {
+        "id": 3,
+        "nombre": "Simple Bacon",
+        "precio": 4400,
+        "img": "./Hamburguesa-fondo-negro.jpg"
+     },
+
+     {
+         "id": 4,
+         "nombre": "Doble Pepinillo",
+         "precio": 6000,
+         "img": "./Hamburguesa-fondo-negro.jpg"
+      },
+
+      {
+        "id": 5,
+        "nombre": "Doble Cheddar",
+        "precio": 6200,
+        "img": "./Hamburguesa-fondo-negro.jpg"
+     },
+
+     {
+         "id": 6,
+         "nombre": "Doble Bacon",
+         "precio": 6400,
+         "img": "./Hamburguesa-fondo-negro.jpg"
+      },
+
+      {
+        "id": 7,
+        "nombre": "Triple Pepinillo",
+        "precio": 8000,
+        "img": "./Hamburguesa-fondo-negro.jpg"
+     },
+
+     {
+        "id": 8,
+        "nombre": "Triple Cheddar",
+        "precio": 8200,
+        "img": "./Hamburguesa-fondo-negro.jpg"
+     },
+
+      {
+        "id": 9,
+        "nombre": "Triple Bacon",
+        "precio": 8400,
+        "img": "./Hamburguesa-fondo-negro.jpg"
+     },
+
+     {
+       "id": 10,
+       "nombre": "Papas fritas",
+       "precio": 3000,
+       "img": "./papas-fritas.jpg"
+    },
+
+    {
+        "id": 11,
+        "nombre": "Papas con Cheddar",
+        "precio": 3500,
+        "img": "./papas-con-cheddar.jpg"
+     },
+
+     {
+        "id": 12,
+        "nombre": "Papas con Cheddar y Bacon",
+        "precio": 4000,
+        "img": "./papas-con-cheddar-y-bacon.jpg"
+     }
+
+]
