@@ -1,4 +1,3 @@
-import CardProducts from "./CardProducts"
 import React, { useState, useEffect } from 'react';
 import ItemList from "./ItemList";
 
