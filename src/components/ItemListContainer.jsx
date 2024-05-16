@@ -1,5 +1,6 @@
 import CardProducts from "./CardProducts"
 import React, { useState, useEffect } from 'react';
+import ItemList from "./ItemList";
 
 /* Container debe llevar un efecto y un estado */
 
@@ -14,12 +15,10 @@ function ItemListContainer() {
     }, []);
   
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {productos.map((producto) => (
-        <CardProducts key={producto.id} nombre={producto.nombre} />
-      ))}
-    </section>
-  );
+    <div>
+      <ItemList productos ={productos}></ItemList>
+    </div>
+    )
 }
 
 export default ItemListContainer
