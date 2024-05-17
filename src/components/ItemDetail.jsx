@@ -22,9 +22,9 @@ function ItemDetail() {
 
   return (
     <div>
-      <h2>Detalle del Producto</h2>
+      <h2 className='text-center'>Detalle del Producto</h2>
       <p>{producto.nombre}</p>
-      <img src={producto.imagen} alt={""} />
+      <img className= "h10"src={producto.imagen} alt={""} />
       <p>Ingredientes: {producto.descripcion}</p>
       <AddItemButton />
     </div>

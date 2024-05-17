@@ -3,6 +3,7 @@ import ItemListContainer from "./ItemListContainer"
 import Inicio from "../Pages/Inicio"
 import Contacto from "../Pages/Contacto"
 import ItemDetail from "./ItemDetail"
+import PageNotFound from "./PageNotFound"
 
 function Main () {
     return (
@@ -12,6 +13,7 @@ function Main () {
                 <Route path='/Menu' element={<ItemListContainer/>}></Route>
                 <Route path='/Contacto' element={<Contacto/>}></Route>
                 <Route path="/Menu/:id" element={<ItemDetail/>}></Route>
+                <Route path='/*' element={<PageNotFound/>}></Route>
             </Routes> 
         </main>
     )
