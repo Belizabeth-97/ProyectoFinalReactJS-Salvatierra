@@ -4,7 +4,7 @@ import AddItemButton from './AddItemButton';
 
 function ItemDetail() {
   const { id } = useParams();
-  const [producto, setProducto] = useState(null); // Inicializa como null
+  const [producto, setProducto] = useState(null); 
 
   useEffect(() => {
     fetch('/src/components/api.json')
