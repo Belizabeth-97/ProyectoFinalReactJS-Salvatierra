@@ -4,14 +4,17 @@ import AddItemButton from './AddItemButton';
 
 function ItemDetail() {
   const { id } = useParams();
-  const [producto, setProducto] = useState({});
+  const [producto, setProducto] = useState(null); // Inicializa como null
 
   useEffect(() => {
-    fetch(`/src/components/api.json?id=${id}`)
+    fetch('/src/components/api.json')
       .then(response => response.json())
-      .then(data => setProducto(data))
+      .then(productos => {
+        const productoEncontrado = productos.find(producto => producto.id === parseInt(id, 10));
+        setProducto(productoEncontrado);
+      })
       .catch(error => console.error('Error fetching product details:', error));
-  }, []);
+  }, [id]);
 
   if (!producto) {
     return <div>Cargando...</div>;
@@ -19,12 +22,14 @@ function ItemDetail() {
 
   return (
     <div>
-      <h2>Detalle del Producto {}</h2>
-      <p>Nombre: {producto.nombre}</p>
-      <p>Descripción: {producto.descripcion}</p>
-      <AddItemButton></AddItemButton>
+      <h2>Detalle del Producto</h2>
+      <p>{producto.nombre}</p>
+      <img src={producto.imagen} alt={""} />
+      <p>Ingredientes: {producto.descripcion}</p>
+      <AddItemButton />
     </div>
   );
 }
 
 export default ItemDetail;
+

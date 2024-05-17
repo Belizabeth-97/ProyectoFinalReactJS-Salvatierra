@@ -1,99 +1,87 @@
 
-[   
-    {
-       "id": 1,
-       "nombre": "Simple Pepinillo",
-       "precio": 4000,
-       "descripcion":"Medallon de carne simple, pepinillos, lechuga, tomate, queso cheddar, mayonesa secreta",
+[ 
+      {
+      "id": 1,
+      "nombre": "Simple Pepinillo",
+      "precio": 4000,
+      "descripcion":"Medallon de carne simple, pepinillos, lechuga, tomate, queso cheddar, mayonesa secreta",
+      "imagen": "./Hamburguesa-fondo-negro.jpg"
+      },
+      {
+       "id": 2,
+       "nombre": "Simple Cheddar",
+       "precio": 4200,
+       "descripcion":"Medallon de carne simple, queso cheddar, ketchup, mostaza, cebolla",
        "imagen": "./Hamburguesa-fondo-negro.jpg"
-    },
-
-    {
-        "id": 2,
-        "nombre": "Simple Cheddar",
-        "precio": 4200,
-        "descripcion":"Medallon de carne simple, queso cheddar, ketchup, mostaza, cebolla",
-        "imagen": "./Hamburguesa-fondo-negro.jpg"
-     },
-
-     {
-        "id": 3,
-        "nombre": "Simple Bacon",
-        "precio": 4400,
-        "descripcion":"Medallon de carne simple, queso cheddar, bacon picado, bacon en fetas, salsa damsy",
-        "imagen": "./Hamburguesa-fondo-negro.jpg"
-     },
-
-     {
-         "id": 4,
-         "nombre": "Doble Pepinillo",
-         "precio": 6000,
-         "descripcion":"Medallon de carne doble, pepinillos, lechuga, tomate, queso cheddar, mayonesa secreta",
-         "imagen": "./Hamburguesa-fondo-negro.jpg"
       },
-
       {
-        "id": 5,
-        "nombre": "Doble Cheddar",
-        "precio": 6200,
-        "descripcion":"Medallon de carne doble, queso cheddar, ketchup, mostaza, cebolla",
-        "imagen": "./Hamburguesa-fondo-negro.jpg"
-     },
-
-     {
-         "id": 6,
-         "nombre": "Doble Bacon",
-         "precio": 6400,
-         "descripcion":"Medallon de carne doble, queso cheddar, bacon picado, bacon en fetas, salsa damsy",
-         "imagen": "./Hamburguesa-fondo-negro.jpg"
+       "id": 3,
+       "nombre": "Simple Bacon",
+       "precio": 4400,
+       "descripcion":"Medallon de carne simple, queso cheddar, bacon picado, bacon en fetas, salsa damsy",
+       "imagen": "./Hamburguesa-fondo-negro.jpg"
       },
-
       {
-        "id": 7,
-        "nombre": "Triple Pepinillo",
-        "precio": 8000,
-        "descripcion":"Medallon de carne triple, pepinillos, lechuga, tomate, queso cheddar, mayonesa secreta",
+        "id": 4,
+        "nombre": "Doble Pepinillo",
+        "precio": 6000,
+        "descripcion":"Medallon de carne doble, pepinillos, lechuga, tomate, queso cheddar, mayonesa secreta",
         "imagen": "./Hamburguesa-fondo-negro.jpg"
-     },
-
-     {
-        "id": 8,
-        "nombre": "Triple Cheddar",
-        "precio": 8200,
-        "descripcion":"Medallon de carne triple, queso cheddar, ketchup, mostaza, cebolla",
-        "imagen": "./Hamburguesa-fondo-negro.jpg"
-     },
-
+      },
       {
-        "id": 9,
-        "nombre": "Triple Bacon",
-        "precio": 8400,
-        "descripcion":"Medallon de carne triple, queso cheddar, bacon picado, bacon en fetas, salsa damsy",
+       "id": 5,
+       "nombre": "Doble Cheddar",
+       "precio": 6200,
+       "descripcion":"Medallon de carne doble, queso cheddar, ketchup, mostaza, cebolla",
+       "imagen": "./Hamburguesa-fondo-negro.jpg"
+      },
+      {
+        "id": 6,
+        "nombre": "Doble Bacon",
+        "precio": 6400,
+        "descripcion":"Medallon de carne doble, queso cheddar, bacon picado, bacon en fetas, salsa damsy",
         "imagen": "./Hamburguesa-fondo-negro.jpg"
-     },
-
+      },
+      {
+       "id": 7,
+       "nombre": "Triple Pepinillo",
+       "precio": 8000,
+       "descripcion":"Medallon de carne triple, pepinillos, lechuga, tomate, queso cheddar, mayonesa secreta",
+       "imagen": "./Hamburguesa-fondo-negro.jpg"
+      },
+      {
+       "id": 8,
+       "nombre": "Triple Cheddar",
+       "precio": 8200,
+       "descripcion":"Medallon de carne triple, queso cheddar, ketchup, mostaza, cebolla",
+       "imagen": "./Hamburguesa-fondo-negro.jpg"
+      },
      {
-       "id": 10,
-       "nombre": "Papas fritas",
-       "precio": 3000,
-       "descripcion":"Papas fritas en bastones sazonada con condimentos especiales",
-       "imagen": "./papas-fritas.jpg"
-    },
-
-    {
-        "id": 11,
-        "nombre": "Papas con Cheddar",
-        "precio": 3500,
-        "descripcion":"Papas fritas en bastones sazonada con condimentos especiales, acompañado de una deliciosa salsa de queso cheddar derretido",
-        "imagen": "./papas-con-cheddar.jpg"
-     },
-
-     {
-        "id": 12,
-        "nombre": "Papas con Cheddar y Bacon",
-        "precio": 4000,
-        "descripcion":"Papas fritas en bastones sazonada con condimentos especiales, acompañado de una deliciosa salsa de queso cheddar derretido con bacon picado",
-        "imagen": "./papas-con-cheddar-y-bacon.jpg"
-     }
-
+       "id": 9,
+       "nombre": "Triple Bacon",
+       "precio": 8400,
+       "descripcion":"Medallon de carne triple, queso cheddar, bacon picado, bacon en fetas, salsa damsy",
+       "imagen": "./Hamburguesa-fondo-negro.jpg"
+      },
+      {
+      "id": 10,
+      "nombre": "Papas fritas",
+      "precio": 3000,
+      "descripcion":"Papas fritas en bastones sazonada con condimentos especiales",
+      "imagen": "./papas-fritas.jpg"
+      },
+      {
+       "id": 11,
+       "nombre": "Papas con Cheddar",
+       "precio": 3500,
+       "descripcion":"Papas fritas en bastones sazonada con condimentos especiales, acompañado de una deliciosa salsa de queso cheddar derretido",
+       "imagen": "./papas-con-cheddar.jpg"
+      },
+      {
+       "id": 12,
+       "nombre": "Papas con Cheddar y Bacon",
+       "precio": 4000,
+       "descripcion":"Papas fritas en bastones sazonada con condimentos especiales, acompañado de una deliciosa salsa de queso cheddar derretido con bacon picado",
+       "imagen": "./papas-con-cheddar-y-bacon.jpg"
+      }
 ]
