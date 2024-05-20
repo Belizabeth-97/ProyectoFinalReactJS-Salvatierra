@@ -7,8 +7,7 @@ function AddItemButton({onClick}) {
             className="
             p-2 btn-add-to-cart bg-orange-400 
             flex items-center justify-center 
-            tracking-wide rounded-md font-light"
-        >
+            tracking-wide rounded-md font-light">
             Agregar al Carrito
         </button>
     );

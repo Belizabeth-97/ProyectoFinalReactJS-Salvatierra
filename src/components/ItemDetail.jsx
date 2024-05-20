@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import Description from './Description';
 import ItemQuantitySelector from './ItemQuantitySelector';
 import { contexto } from './Contexto';
+import { toast } from 'react-toastify';
 
 function ItemDetail(producto) {
 
@@ -10,6 +11,7 @@ function ItemDetail(producto) {
 
   const handleConfirm = (numero) => {
     contextoActual.agregarAlCarrito(numero, producto)
+    toast("Se agregó al carrito")
   }
 
   return (

@@ -7,6 +7,7 @@ Este proyecto es una e-commerce para encargar comida rápida, tales como, hambur
 - React 
 - Vite
 - Tailwind
+- React-Toastify
 - EsLint
 
 ## Ejecución Local
