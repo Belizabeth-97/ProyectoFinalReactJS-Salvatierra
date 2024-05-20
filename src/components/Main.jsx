@@ -4,6 +4,7 @@ import Inicio from "../Pages/Inicio"
 import Contacto from "../Pages/Contacto"
 import PageNotFound from "./PageNotFound"
 import ItemDetailContainer from "./ItemDetailContainer"
+import DetalleCompra from "./DetalleCompra"
 
 
 function Main () {
@@ -13,6 +14,7 @@ function Main () {
                 <Route path='/' element={<Inicio/>}></Route>
                 <Route path='/Menu' element={<ItemListContainer/>}></Route>
                 <Route path='/Contacto' element={<Contacto/>}></Route>
+                <Route path='/Tienda' element={<DetalleCompra/>}></Route>
                 <Route path="/Menu/:id" element={<ItemDetailContainer/>}></Route>
                 <Route path='/*' element={<PageNotFound/>}></Route>
             </Routes> 

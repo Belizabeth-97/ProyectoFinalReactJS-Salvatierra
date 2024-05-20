@@ -1,12 +1,20 @@
-import { contexto } from "./Contexto"
+
 import MiCarrito from "/carrito-compras.png"
-import { useContext, useState } from "react"
+import { useNavigate } from "react-router-dom"
+
 
 function CartWidget() {
 
+  const navegador = useNavigate()
+
+  const handleClick = () => {
+      navegador('/Tienda')
+  }
+
+
   return (
     <div>
-      <button>
+      <button onClick={handleClick}>
         <img src={MiCarrito} alt="" />
       </button>
     </div>

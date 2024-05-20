@@ -16,7 +16,7 @@ const Provider = contexto.Provider;
     const borrarDelCarrito = (id) => {
         
     }
-    
+
     const vaciarCarrito = () => {
         setCarrito([]);
         setUnidadesCarrito(0);
