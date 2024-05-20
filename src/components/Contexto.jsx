@@ -12,10 +12,11 @@ const Provider = contexto.Provider;
     const agregarAlCarrito = (cantidadProducto, item) => {
       setUnidadesCarrito(unidadesCarrito + cantidadProducto)
     }
-    
+
     const borrarDelCarrito = (id) => {
         
     }
+    
     const vaciarCarrito = () => {
         setCarrito([]);
         setUnidadesCarrito(0);

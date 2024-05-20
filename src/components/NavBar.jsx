@@ -13,10 +13,10 @@ function NavBar (){
             <Link to="/Menu">Menú</Link>
             <Link to="/Contacto">Contacto</Link>
             <CartWidget/>
-            {valorDelContexto.actualizacionCarrito}
+            {valorDelContexto.unidadesCarrito}
         </nav>
     )
 }
 
 
-export default NavBar
+export default NavBar;
