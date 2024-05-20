@@ -9,7 +9,7 @@ import React from 'react'
         <div>
           <img className= "w-80 h-80 rounded-md"src={producto.imagen} alt={""} />
         </div>
-        <div className='flex flex-col gap-8'>
+        <div className='flex flex-col gap-6'>
           <h3 className='p-1 text-lg font-semibold from-stone-600'>Ingredientes: </h3>
           <p className='p-1 font-light'>{producto.descripcion}</p>
         </div>
