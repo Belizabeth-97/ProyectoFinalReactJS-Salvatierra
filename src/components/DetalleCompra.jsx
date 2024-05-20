@@ -41,15 +41,15 @@ function DetalleCompra() {
       </div>
       <div className="pt-4 space-y-2">
         <div className="space-y-6">
-          <button type="button" className="w-full p-2 btn-add-to-cart bg-orange-400 
-            flex items-center justify-center 
-            tracking-wide rounded-md font-light">
-            Ir a pagar
-          </button>
           <button onClick={handleClick} className="w-full p-2 btn-add-to-cart bg-orange-400 
             flex items-center justify-center 
             tracking-wide rounded-md font-light">
             Vaciar carrito
+          </button>
+          <button type="button" className="w-full p-2 btn-add-to-cart bg-orange-400 
+            flex items-center justify-center 
+            tracking-wide rounded-md font-light">
+            Finalizar Compra
           </button>
         </div>
       </div>

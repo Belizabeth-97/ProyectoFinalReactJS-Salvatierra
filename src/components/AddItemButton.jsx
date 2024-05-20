@@ -9,7 +9,7 @@ function AddItemButton({onClick}) {
             flex items-center justify-center 
             tracking-wide rounded-md font-light"
         >
-            Confirmar Cantidad
+            Agregar al Carrito
         </button>
     );
 }
