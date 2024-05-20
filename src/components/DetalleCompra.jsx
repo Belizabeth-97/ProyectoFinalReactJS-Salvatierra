@@ -5,6 +5,8 @@ function DetalleCompra() {
 
     const contextoCarrito = useContext(contexto)
 
+    const handleClick = () => contextoCarrito.vaciarCarrito()
+
   return (
     <div>
       <div className="flex flex-col max-w-md p-6 space-y-4 divide-y sm:w-96 sm:p-10 dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800">
@@ -39,8 +41,11 @@ function DetalleCompra() {
       </div>
       <div className="pt-4 space-y-2">
         <div className="space-y-6">
-          <button type="button" className="w-full py-2 font-semibold border rounded dark:bg-indigo-600 dark:text-gray-50 dark:border-indigo-600">
+          <button type="button" className="w-full py-2 font-semibold border rounded">
             Ir a pagar
+          </button>
+          <button onClick={handleClick} className="w-full py-2 font-semibold border rounded">
+            Vaciar carrito
           </button>
         </div>
       </div>

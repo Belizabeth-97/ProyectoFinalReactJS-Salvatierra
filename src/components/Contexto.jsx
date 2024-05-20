@@ -5,9 +5,9 @@ const Provider = contexto.Provider;
 
  function CarritoProvider(props) {
 
-    const [unidadesCarrito, setUnidadesCarrito] = useState (0)
+    const [unidadesCarrito, setUnidadesCarrito] = useState(0)
     const [precioTotal, setPrecioTotal] = useState(0)
-    const [carrito, setCarrito] = useState ([])
+    const [carrito, setCarrito] = useState([])
 
     const agregarAlCarrito = (cantidadProducto, producto) => {
       setUnidadesCarrito(unidadesCarrito + cantidadProducto)
