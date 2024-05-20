@@ -7,14 +7,24 @@ const Provider = contexto.Provider;
 
     const [unidadesCarrito, setUnidadesCarrito] = useState (0)
     const [precioTotal, setPrecioTotal] = useState(0)
-    const [carrito, setCarrito] = useState (0)
+    const [carrito, setCarrito] = useState ([])
 
-    const agregarAlCarrito = (cantidadProducto, item) => {
+    const agregarAlCarrito = (cantidadProducto, producto) => {
       setUnidadesCarrito(unidadesCarrito + cantidadProducto)
+
+      const copia = [...carrito]
+      const item = {
+        producto,
+        cantidadProducto
+      }
+      copia.push(item)
+      setCarrito(copia)
+
     }
 
     const borrarDelCarrito = (id) => {
-        
+        const carritoActualizado = carrito.filter(item => item.id !== id)
+        setCarrito(carritoActualizado)
     }
 
     const vaciarCarrito = () => {
