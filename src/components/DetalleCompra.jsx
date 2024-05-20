@@ -9,7 +9,7 @@ function DetalleCompra() {
 
   return (
     <div>
-      <div className="flex flex-col max-w-md p-6 space-y-4 divide-y sm:w-96 sm:p-10 dark:divide-gray-300 dark:bg-gray-50 dark:text-gray-800">
+      <div className="flex flex-col max-w-md p-6 space-y-4 divide-y sm:w-96 sm:p-10 divide-gray-800 dark:text-gray-800">
       <h2 className="text-2xl font-semibold">Detalle de Compra</h2>
       <ul className="flex flex-col pt-4 space-y-2">
       {contextoCarrito.carrito.map((item) => (
@@ -41,10 +41,14 @@ function DetalleCompra() {
       </div>
       <div className="pt-4 space-y-2">
         <div className="space-y-6">
-          <button type="button" className="w-full py-2 font-semibold border rounded">
+          <button type="button" className="w-full p-2 btn-add-to-cart bg-orange-400 
+            flex items-center justify-center 
+            tracking-wide rounded-md font-light">
             Ir a pagar
           </button>
-          <button onClick={handleClick} className="w-full py-2 font-semibold border rounded">
+          <button onClick={handleClick} className="w-full p-2 btn-add-to-cart bg-orange-400 
+            flex items-center justify-center 
+            tracking-wide rounded-md font-light">
             Vaciar carrito
           </button>
         </div>

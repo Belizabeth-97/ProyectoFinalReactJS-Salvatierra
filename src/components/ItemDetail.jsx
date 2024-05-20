@@ -1,6 +1,5 @@
 
 import { useContext } from 'react';
-import AddItemButton from './AddItemButton';
 import Description from './Description';
 import ItemQuantitySelector from './ItemQuantitySelector';
 import { contexto } from './Contexto';
@@ -15,9 +14,12 @@ function ItemDetail(producto) {
 
   return (
     <div>
-      <Description {...producto}/>
-      <AddItemButton />
-      <ItemQuantitySelector handleConfirm={handleConfirm}/>
+      <div>
+        <Description {...producto}/>
+      </div>
+      <div>
+       <ItemQuantitySelector handleConfirm={handleConfirm}/>
+      </div>
     </div>
   );
 }
