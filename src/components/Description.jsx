@@ -3,7 +3,7 @@ import React from 'react'
  function Description(producto) {
   return (
     <div>
-      <h2 className='text-center from-stone-600 font-light text-2xl'>Detalle del Producto</h2>
+      <h2 className='text-center  text-stone-700 font-light text-2xl'>Detalle del Producto</h2>
       <p className='p-2 from-stone-600 text-lg font-bold'>{producto.nombre}</p>
       <section className='grid grid-cols-1 lg:grid-cols-2'>
         <div>
