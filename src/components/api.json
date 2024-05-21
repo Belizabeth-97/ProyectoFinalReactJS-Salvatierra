@@ -5,63 +5,63 @@
       "nombre": "Simple Pepinillo",
       "precio": 4000,
       "descripcion":"Medallon de carne simple, pepinillos, lechuga, tomate, queso cheddar, mayonesa secreta - todos los combos incluyen porción de papas fritas",
-      "imagen": "../Hamburguesa-fondo-negro.jpg"
+      "imagen": "../doblePepinillo.jpeg"
       },
       {
        "id": 2,
        "nombre": "Simple Cheddar",
        "precio": 4200,
        "descripcion":"Medallon de carne simple, queso cheddar, ketchup, mostaza, cebolla - todos los combos incluyen porción de papas fritas",
-       "imagen": "../Hamburguesa-fondo-negro.jpg"
+       "imagen": "../tripleCheddar.jpg"
       },
       {
        "id": 3,
        "nombre": "Simple Bacon",
        "precio": 4400,
        "descripcion":"Medallon de carne simple, queso cheddar, bacon picado, bacon en fetas, salsa damsy - todos los combos incluyen porción de papas fritas",
-       "imagen": "../Hamburguesa-fondo-negro.jpg"
+       "imagen": "../tripleBacon.jpg"
       },
       {
         "id": 4,
         "nombre": "Doble Pepinillo",
         "precio": 6000,
         "descripcion":"Medallon de carne doble, pepinillos, lechuga, tomate, queso cheddar, mayonesa secreta - todos los combos incluyen porción de papas fritas",
-        "imagen": "../Hamburguesa-fondo-negro.jpg"
+        "imagen": "../doblePepinillo.jpeg"
       },
       {
        "id": 5,
        "nombre": "Doble Cheddar",
        "precio": 6200,
        "descripcion":"Medallon de carne doble, queso cheddar, ketchup, mostaza, cebolla - todos los combos incluyen porción de papas fritas",
-       "imagen": "../Hamburguesa-fondo-negro.jpg"
+       "imagen": "../tripleCheddar.jpg"
       },
       {
         "id": 6,
         "nombre": "Doble Bacon",
         "precio": 6400,
         "descripcion":"Medallon de carne doble, queso cheddar, bacon picado, bacon en fetas, salsa damsy - todos los combos incluyen porción de papas fritas",
-        "imagen": "../Hamburguesa-fondo-negro.jpg"
+        "imagen": "../tripleBacon.jpg"
       },
       {
        "id": 7,
        "nombre": "Triple Pepinillo",
        "precio": 8000,
        "descripcion":"Medallon de carne triple, pepinillos, lechuga, tomate, queso cheddar, mayonesa secreta - todos los combos incluyen porción de papas fritas",
-       "imagen": "../Hamburguesa-fondo-negro.jpg"
+       "imagen": "../doblePepinillo.jpeg"
       },
       {
        "id": 8,
        "nombre": "Triple Cheddar",
        "precio": 8200,
        "descripcion":"Medallon de carne triple, queso cheddar, ketchup, mostaza, cebolla - todos los combos incluyen porción de papas fritas",
-       "imagen": "../Hamburguesa-fondo-negro.jpg"
+       "imagen": "../tripleCheddar.jpg"
       },
      {
        "id": 9,
        "nombre": "Triple Bacon",
        "precio": 8400,
        "descripcion":"Medallon de carne triple, queso cheddar, bacon picado, bacon en fetas, salsa damsy - todos los combos incluyen porción de papas fritas",
-       "imagen": "../Hamburguesa-fondo-negro.jpg"
+       "imagen": "../tripleBacon.jpg"
       },
       {
       "id": 10,
@@ -82,6 +82,6 @@
        "nombre": "Papas con Cheddar y Bacon",
        "precio": 4000,
        "descripcion":"Papas fritas en bastones sazonada con condimentos especiales, acompañado de una deliciosa salsa de queso cheddar derretido con bacon picado",
-       "imagen": "../papas-con-cheddar-y-bacon.jpg"
+       "imagen": "../papasCheddaryBacon.jpg"
       }
 ]
