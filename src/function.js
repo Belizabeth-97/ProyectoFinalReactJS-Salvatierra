@@ -1,5 +1,6 @@
 import { collection, getDocs, getFirestore, getDoc, doc, addDoc, serverTimestamp } from "firebase/firestore"
 import { app } from "./firebase"
+import DetalleCompra from "./components/DetalleCompra"
 
 export const getProducts = () => {
     const baseDeDatos = getFirestore (app)
@@ -28,7 +29,6 @@ export const getProductsDetails = (id) => {
     return consulta    
         .then((resultado)=>{
             const producto = resultado.data()
-            producto.id = doc.id
             return producto
         })
         .catch((error)=>{
@@ -36,14 +36,18 @@ export const getProductsDetails = (id) => {
         })
 }
 
-export const createSale = () => {
+export const createSale = (datosCliente, total, productosComprados) => {
     const baseDeDatos = getFirestore (app)
     const salesCollection = collection(baseDeDatos, "Ventas")
     const venta = {
-        items : [],
-        usuario: {Nombre:"" , Telefono:"", Direccion:""},
+        items : productosComprados,
+        usuario: {
+            nombre: datosCliente.nombre, 
+            telefono: datosCliente.telefono, 
+            direccion: datosCliente.direccion
+        },
         fechaDeCompra: serverTimestamp (),
-        total: 0,
+        total: total,
     }
     const consulta = addDoc(salesCollection, venta)
 

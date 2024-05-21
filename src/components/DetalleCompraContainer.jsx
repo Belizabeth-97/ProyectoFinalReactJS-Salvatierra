@@ -65,15 +65,3 @@ function DetalleCompraContainer() {
   )
 }
 export default DetalleCompraContainer;
-
-
-
-
-    /*const handleSubmit = (e) => {
-      e.preventDefault()
-      toast.loading("Procesando pedido")
-      createSale()
-      toast.dismiss()
-      toast.success("Su compra se realizó exitosamente!")
-    }
-*/
