@@ -51,9 +51,10 @@ export const createSale = (datosCliente, total, productosComprados) => {
     }
     const consulta = addDoc(salesCollection, venta)
 
-    consulta
+    return consulta
         .then((resultado)=>{
             console.log(resultado)
+            return resultado.id
         })
         .catch((error)=> {
             console.log(error)

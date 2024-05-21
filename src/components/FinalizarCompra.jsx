@@ -3,6 +3,7 @@ import DetalleCompra from './DetalleCompra';
 import { createSale } from '../function';
 import { toast } from 'react-toastify';
 import { contexto } from './Contexto';
+import { useNavigate } from 'react-router-dom';
 
 
  function FinalizarCompra() {
@@ -10,8 +11,12 @@ import { contexto } from './Contexto';
     const [nombre, setNombre] = useState('');
     const [telefono, setTelefono] = useState('');
     const [direccion, setDireccion] = useState('');
+    const [showPopup, setShowPopup] = useState(false);
+    const [numeroOrden, setNumeroOrden] = useState("");
 
     const contextoCarrito = useContext(contexto)
+
+    const navegador = useNavigate()
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -34,11 +39,32 @@ import { contexto } from './Contexto';
           .reduce((acumulador, precioActual) => acumulador + precioActual, 0)
 
         createSale(datosCliente, total , productosComprados)
+            .then(id => setNumeroOrden(id))
         toast.dismiss()
         toast.success("Su compra se realizó exitosamente!")
+
+        setShowPopup(!showPopup)
+      }
+
+      const finalizarProceso = () =>{
+        contextoCarrito.vaciarCarrito()
+        setShowPopup(!showPopup)
+        navegador('/') 
       }
 
   return (
+    <>
+    <div>
+      {showPopup && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white p-6 rounded-md shadow-md">
+            <h2 className="text-lg font-bold mb-4">Su orden ha sido generada</h2>
+            <p>Tu número de pedido es: {numeroOrden} </p>
+            <button onClick={finalizarProceso} className="mt-4 p-2 bg-gray-300 rounded-md">Cerrar</button>
+          </div>
+        </div>
+      )}
+    </div>
     <div className='max-w-md mx-auto p-6 bg-white rounded-md shadow-md'>
       <form onSubmit={handleSubmit} className="space-y-4">
         <p className=' text-lg font-bold'>Completa tus datos para el envío de tu pedido</p>
@@ -55,6 +81,7 @@ import { contexto } from './Contexto';
         <button className='mx-auto p-2 border border-gray-500 rounded-md flex items-center justify-center tracking-wide font-light'>Generar Orden</button>
       </form>
     </div>
+    </>
   )
 }
 export default FinalizarCompra;
