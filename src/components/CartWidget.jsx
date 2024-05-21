@@ -11,7 +11,6 @@ function CartWidget() {
       navegador('/Tienda')
   }
 
-
   return (
     <div>
       <button onClick={handleClick}>

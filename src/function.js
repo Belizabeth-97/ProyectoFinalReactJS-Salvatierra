@@ -1,4 +1,4 @@
-import { collection, getDocs, getFirestore, getDoc, doc } from "firebase/firestore"
+import { collection, getDocs, getFirestore, getDoc, doc, addDoc, serverTimestamp } from "firebase/firestore"
 import { app } from "./firebase"
 
 export const getProducts = () => {
@@ -32,6 +32,26 @@ export const getProductsDetails = (id) => {
             return producto
         })
         .catch((error)=>{
+            console.log(error)
+        })
+}
+
+export const createSale = () => {
+    const baseDeDatos = getFirestore (app)
+    const salesCollection = collection(baseDeDatos, "Ventas")
+    const venta = {
+        items : [],
+        usuario: {Nombre:"" , Telefono:"", Direccion:""},
+        fechaDeCompra: serverTimestamp (),
+        total: 0,
+    }
+    const consulta = addDoc(salesCollection, venta)
+
+    consulta
+        .then((resultado)=>{
+            console.log(resultado)
+        })
+        .catch((error)=> {
             console.log(error)
         })
 }
