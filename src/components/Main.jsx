@@ -10,7 +10,7 @@ import FinalizarCompra from "./FinalizarCompra"
 
 function Main () {
     return (
-        <main className="p-10 grow bg-orange-200">
+        <main className="p-10 grow bg-zinc-300">
             <Routes>
                 <Route path='/' element={<Inicio/>}></Route>
                 <Route path='/Menu' element={<ItemListContainer/>}></Route>

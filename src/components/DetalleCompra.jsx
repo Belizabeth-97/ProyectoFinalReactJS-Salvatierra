@@ -1,9 +1,6 @@
 import React, { useContext } from 'react'
 import { contexto } from './Contexto';
 
-
-
-
  function DetalleCompra() {
 
     const contextoCarrito = useContext(contexto)

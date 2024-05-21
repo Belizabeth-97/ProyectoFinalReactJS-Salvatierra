@@ -21,9 +21,9 @@ import AddItemButton from './AddItemButton'
   return (
     <div className='flex p-2 mt-4 gap-8'>
       <div className="flex gap-4">
-        <button onClick={disminuir} className="p-3 bg-orange-600 rounded-sm">-</button>
+        <button onClick={disminuir} className="p-3 bg-zinc-500 rounded-sm">-</button>
         <p className='flex items-center'>{numero}</p>
-        <button onClick={incrementar} className="p-3 bg-orange-600 rounded-sm">+</button>
+        <button onClick={incrementar} className="p-3 bg-zinc-500 rounded-sm">+</button>
       </div>
         <AddItemButton onClick={confirmar}/>
     </div>

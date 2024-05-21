@@ -41,7 +41,7 @@ import { useNavigate } from 'react-router-dom';
         createSale(datosCliente, total , productosComprados)
             .then(id => setNumeroOrden(id))
         toast.dismiss()
-        toast.success("Su compra se realizó exitosamente!")
+        toast.success("Su compra se realizó exitosamente!", { autoClose: 1000 })
 
         setShowPopup(!showPopup)
       }
@@ -58,9 +58,9 @@ import { useNavigate } from 'react-router-dom';
       {showPopup && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-6 rounded-md shadow-md">
-            <h2 className="text-lg font-bold mb-4">Su orden ha sido generada</h2>
-            <p>Tu número de pedido es: {numeroOrden} </p>
-            <button onClick={finalizarProceso} className="mt-4 p-2 bg-gray-300 rounded-md">Cerrar</button>
+            <h2 className="text-lg font-bold mb-4">¡Muchas gracias por su compra!</h2>
+            <p className=' font-light'>Su orden ha sido generada bajo el #{numeroOrden} </p>
+            <button onClick={finalizarProceso} className="mt-4 p-2 border border-gray-500 rounded-md">Cerrar</button>
           </div>
         </div>
       )}

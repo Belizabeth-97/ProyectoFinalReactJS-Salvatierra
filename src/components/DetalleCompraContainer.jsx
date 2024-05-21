@@ -48,12 +48,12 @@ function DetalleCompraContainer() {
       </div>
       <div className="pt-4 space-y-2">
         <div className="space-y-6">
-          <button onClick={handleClick} className="w-full p-2 btn-add-to-cart bg-orange-400 
+          <button onClick={handleClick} className="w-full p-2 btn-add-to-cart bg-zinc-500 
             flex items-center justify-center 
             tracking-wide rounded-md font-light">
             Vaciar carrito
           </button>
-            <button onClick={handleFinalizarCompra} type="button" className="w-full p-2 btn-add-to-cart bg-orange-400 
+            <button onClick={handleFinalizarCompra} type="button" className="w-full p-2 btn-add-to-cart bg-zinc-500 
               flex items-center justify-center 
               tracking-wide rounded-md font-light">
               Finalizar Compra

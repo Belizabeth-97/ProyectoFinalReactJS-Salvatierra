@@ -5,7 +5,7 @@ function AddItemButton({onClick}) {
         <button 
             onClick={onClick} 
             className="
-            p-2 btn-add-to-cart bg-orange-400 
+            p-2 btn-add-to-cart bg-zinc-500
             flex items-center justify-center 
             tracking-wide rounded-md font-light">
             Agregar al Carrito

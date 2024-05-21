@@ -11,7 +11,7 @@ function ItemDetail(producto) {
 
   const handleConfirm = (numero) => {
     contextoActual.agregarAlCarrito(numero, producto)
-    toast("Se agregó al carrito")
+    toast("Se agregó al carrito", { autoClose: 1000 })
   }
 
   return (
